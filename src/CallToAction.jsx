@@ -103,7 +103,7 @@ function CallToAction() {
       phoneNumber: fullPhoneNumber,
     };
 
-    fetch('https://primary-production-f625.up.railway.app/webhook-test/call', {
+    fetch('https://primary-production-f625.up.railway.app/webhook/call', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
