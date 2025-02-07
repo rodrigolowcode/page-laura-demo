@@ -90,7 +90,7 @@ function CallToAction() {
 
   const handleCallClick = () => {
     if (phoneNumber.trim() === '') {
-      alert('Please enter a phone number.');
+      alert('Digite um número válido');
       return;
     }
 
@@ -157,7 +157,7 @@ function CallToAction() {
         className="call-button"
         disabled={loading}
       >
-        {loading ? 'Loading...' : 'Iniciar conversa'}
+        {loading ? 'Iniciando...' : 'Iniciar conversa'}
       </button>
       {successMessage && <p className="success-message">{successMessage}</p>}
       {errorMessage && <p className="error-message">{errorMessage}</p>}
